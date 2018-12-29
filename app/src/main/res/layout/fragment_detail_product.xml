@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.jjl.demo.draglayout.view.CustomScrollView
+        android:id="@+id/scrollView"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:focusable="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="45sp"
+                android:id="@+id/textView"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp" />
+        </LinearLayout>
+
+    </com.jjl.demo.draglayout.view.CustomScrollView>
+
+</LinearLayout>
