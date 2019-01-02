@@ -71,9 +71,14 @@ public class CustomScrollView extends ScrollView {
 			isScrolledToTop = false;
 			isScrolledToBottom = clampedY;
 		}
+		//如果未满一屏的内容，都为true
+        View child = getChildAt(0);
+        if (child == null || (child != null && getHeight() >= child.getHeight())) {
+            isScrolledToBottom = true;
+        }
 	}
 
-	public void setAllowDragOnBottom(boolean allowDragOnBottom) {
+    public void setAllowDragOnBottom(boolean allowDragOnBottom) {
 		mAllowDragOnBottom = allowDragOnBottom;
 	}
 
